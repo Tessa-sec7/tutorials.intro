@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+    <link rel="stylesheet" href="style.css">
     <title>MY CONTACT FORM</title>
 </head>
 
@@ -16,7 +16,7 @@
 
     <form id="contactForm" action="https://formsubmit.co/iamstephaneamara@gmail.com"method="post" enctype="multipart/form-data" target="_blank" > 
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="next" value="Thank you for your submission. We would get back to you." id="">
+        <input type="hidden" name="next" value="Thank you for your submission. We would get back to you.">
 
 
         <div class="entry">
@@ -36,17 +36,23 @@
             <input type="tel" id="tel" placeholder="+2340000000000" name="tel"required>    
         </div>
 
-
-        <div class="entry">
-            <label for="">Gender: <span class="required-star"> </span></label> <br>
-            <input type="radio" name="gender" value="male" id="gender">Male <br>
-            <input type="radio" name="gender" value="female" id="gender">Female <br>
-            <input type="radio" name="gender" value="other" id="gender">Other
+            <label for="">Gender: <span class="required-star"> </span> </label>
+        <div class="radio">
+            <input type="radio" name="gender" value="male" id="gender">
+            <label for="">Male <span class="required-star"> </span> </label>
+        </div>
+        <div class="radio">
+            <input type="radio" name="gender" value="female" id="gender">
+            <label for="">Female <span class="required-star"> </span> </label>
+        </div>
+        <div class="radio">
+            <input type="radio" name="gender" value="other" id="gender">
+            <label for="">Other <span class="required-star"> </span> </label>
         </div>
 
 
         <div>
-            <label> Interests (you can select more than one) <span class="required-star"></span></label> <br>
+            <label> Interests (you can select more than one): <span class="required-star"></span></label> <br>
             <input type="checkbox" name="" id="gender">Music<br>
             <input type="checkbox" name="" id="gender">Movies<br>
             <input type="checkbox" name="" id="gender">Games<br>
@@ -55,11 +61,20 @@
             <input type="checkbox" name="" id="gender">Singing
         </div>
 
+        <label for="rating">Rate Your Tech Journey So Far</label>
+        <select name="" id="">
+            <option value="0">Select</option>
+            <option value="1">good</option>
+            <option value="2">very good</option>
+            <option value="3">excellent</option>
+            <option value="4">outstanding</option>
+        </select>
+
 
 
         <div>
-            <label for="message">Message</label> 
-            <textarea name="message" id="message" placeholder="tell us a little about yourself" rows="4" style="width:300px;" ></textarea>
+            <label for="message">Message:</label> 
+            <textarea name="message" id="message" placeholder="tell us a little about yourself" rows="1" style="width:300px;" ></textarea>
         </div> 
         
         
