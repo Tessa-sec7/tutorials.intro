@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>MY CONTACT FORM</title>
+</head>
+
+
+<body>
+    <h1> Contact Form</h1>
+    <p>Hello there! To access our services, please fill in the necessary details below:</p>
+
+
+    <form id="contactForm" action="https://formsubmit.co/iamstephaneamara@gmail.com"method="post" enctype="multipart/form-data" target="_blank" > 
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="next" value="Thank you for your submission. we would get back to you." id="">
+
+
+        <div class="entry">
+            <label for="name"> Name:<span class="required-star"></span> </label>
+            <input type="text" id="name" placeholder="your full name" name="name"required>
+        </div>
+    
+
+        <div class="entry">
+            <label for="email"> Email:<span class="required-star"></span> </label>
+            <input type="email" id="email" placeholder="email@gmail.com" name="email"required>
+        </div>
+
+
+        <div class="entry">
+            <label for="phone"> Phone Number: <span class="required-star"></span></label>
+            <input type="tel" id="tel" placeholder="+2340000000000" name="tel"required>    
+        </div>
+
+
+        <div class="entry">
+            <label for="">Gender: <span class="required-star"> </span></label> <br>
+            <input type="radio" name="gender" value="male" id="gender">Male <br>
+            <input type="radio" name="gender" value="female" id="gender">Female <br>
+            <input type="radio" name="gender" value="other" id="gender">Other
+        </div>
+
+
+        <div>
+            <label> Interests (you can select more than one) <span class="required-star"></span></label> <br>
+            <input type="checkbox" name="" id="gender">Music<br>
+            <input type="checkbox" name="" id="gender">Movies<br>
+            <input type="checkbox" name="" id="gender">Games<br>
+            <input type="checkbox" name="" id="gender">Sports <br>
+            <input type="checkbox" name="" id="gender">Dancing <br>
+            <input type="checkbox" name="" id="gender">Singing
+        </div>
+
+
+
+        <div>
+            <label for="message">Message</label> 
+            <textarea name="message" id="message" placeholder="tell us a little about yourself" rows="4" style="width:300px;" ></textarea>
+        </div> 
+        
+        
+        <button type="submit"> SUBMIT FORM</button>
+
+    </form>
+
+    </body>
+</html>
